@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sitew.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site !</h1>
+        <img src="./1032-800x200-grayscale.jpg" alt="image en noir et blanc">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="../images/obelix.gif">Blog</a></li>
+                <li><a href=""></a>Gallerie</li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post" action="sitew.php">
+        <fieldset>
+            <legend>Veuillez entrer vos coordonées</legend>
+            <div><label for="id_nom">Nom <span>*</span></label>
+                <input type="text" name="nom" placeholder="Ex: Dupont" minlength="2" maxlength="20" id="id_nom">
+            </div>
+            <div><label for="id_email">E-mail <span>*</span></label>
+                <input type="email" name="e-mail" placeholder="Ex: Jacques@aol.com" id="id_email">
+            </div>
+            <div><label for="id_commentaire">N'hesitez pas a nous dire ce que vous en pensez !</label><br>
+                <textarea name="commentaire" placeholder="Excellents choix de couleurs !" cols="70" rows="10" id="id_commentaire"></textarea>
+            </div>
+            <div><label for="file1">Voulez vous une copie?</label>
+                <input type="checkbox" id="file1" checked>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer"><input type="reset" value="Reinitialiser">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <ul>
+            <li><a href="https://fastly.picsum.photos/id/519/200/300.jpg?grayscale&hmac=N5_yDaAwp_TU_uIsFGVpzsVOsjJ1aLGpPVHNPkIFMms">Horizon</a></li>
+            <li><a href="https://fastly.picsum.photos/id/185/200/300.jpg?grayscale&hmac=0o212b6Fr8oqffeZzcCdKwC9URnNy96CQcmuWSnfR-I">Sable</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
